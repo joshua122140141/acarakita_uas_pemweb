@@ -1,6 +1,6 @@
 <?php
-require_once './helper/model/Event.php';
-require_once './helper/database/koneksi.php';
+require_once __DIR__ . '/../model/Event.php';
+require_once __DIR__ . '/Koneksi.php';
 
 class EventController extends Koneksi {
     public function create($title, $category, $location, $description, $date, $price) {

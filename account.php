@@ -1,6 +1,6 @@
 <?php
-require_once './helper/database/EventController.php';
-require_once './helper/model/User.php';
+require_once 'helper/database/EventController.php';
+require_once 'helper/model/User.php';
 $eventController = new EventController();
 
     session_start();

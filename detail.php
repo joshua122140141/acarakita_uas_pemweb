@@ -1,7 +1,7 @@
 <?php
-require_once './helper/database/EventController.php';
-require_once './helper/database/RegistrationController.php';
-require_once './helper/model/User.php';
+require_once 'helper/database/EventController.php';
+require_once 'helper/database/RegistrationController.php';
+require_once 'helper/model/User.php';
 $eventController = new EventController();
 $registrationController = new RegistrationController();
 
@@ -120,13 +120,13 @@ if ($eventId) {
                     <div class="space-y-4">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700">Nama</label>
-                            <input type="text" id="name" name="name" required
+                            <input type="text" id="name" name="name" require_onced
                                 class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-600 focus:border-blue-600">
                             <p id="nameError" class="mt-1 text-sm text-red-600 hidden"></p>
                         </div>
                         <div>
                             <label for="paymentMethod" class="block text-sm font-medium text-gray-700">Metode Pembayaran</label>
-                            <select id="paymentMethod" name="paymentMethod" required
+                            <select id="paymentMethod" name="paymentMethod" require_onced
                                 class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-600 focus:border-blue-600">
                                 <option value="Transfer">Transfer</option>
                                 <option value="E-Wallet">E-Wallet</option>
@@ -134,7 +134,7 @@ if ($eventId) {
                         </div>
                         <div>
                             <label for="quantity" class="block text-sm font-medium text-gray-700">Jumlah Tiket</label>
-                            <input type="number" id="quantity" name="quantity" required min="1"
+                            <input type="number" id="quantity" name="quantity" require_onced min="1"
                                 class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-600 focus:border-blue-600">
                             <p id="quantityError" class="mt-1 text-sm text-red-600 hidden"></p>
                         </div>
@@ -212,7 +212,7 @@ if ($eventId) {
             <div class="space-y-4">
                 <div>
                     <label class="block text-sm font-medium">Nama</label>
-                    <input type="text" id="editName" name="editName" class="w-full border px-3 py-2 rounded" required max="100" min="3">
+                    <input type="text" id="editName" name="editName" class="w-full border px-3 py-2 rounded" require_onced max="100" min="3">
                 </div>
                 <div>
                     <label class="block text-sm font-medium">Metode Pembayaran</label>
@@ -223,7 +223,7 @@ if ($eventId) {
                 </div>
                 <div>
                     <label class="block text-sm font-medium">Jumlah Tiket</label>
-                    <input type="number" id="editQuantity" name="editQuantity" class="w-full border px-3 py-2 rounded" min="1" max="100" required>
+                    <input type="number" id="editQuantity" name="editQuantity" class="w-full border px-3 py-2 rounded" min="1" max="100" require_onced>
                 </div>
             </div>
             <div class="mt-4 flex justify-end">

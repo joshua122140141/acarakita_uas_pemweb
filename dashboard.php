@@ -1,5 +1,5 @@
 <?php
-require_once './helper/database/EventController.php';
+require_once 'helper/database/EventController.php';
 $eventController = new EventController();
 
     session_start();

@@ -3,16 +3,16 @@
 class Koneksi {
     private $connection;
 
-    private $host = "127.0.0.1";
+    private $host = "localhost";
     private $username = "root";
     private $password = "";
     private $database = "acarakita";
 
     public function __construct() {
-        $this->host = "127.0.0.1";
+        $this->host = "localhost";
+        $this->username = "root";
+        $this->password = "";
         $this->database = "acarakita";
-        $this->username = "acarakita123";
-        $this->password = "acarakita123";
         
         $this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
         

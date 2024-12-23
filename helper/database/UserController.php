@@ -1,6 +1,6 @@
 <?php
-require_once './helper/model/User.php';
-require_once './helper/database/koneksi.php';
+require_once __DIR__ . '/../model/User.php';
+require_once __DIR__ . '/Koneksi.php';
 
 class UserController extends Koneksi {
     public function login($email, $password) {

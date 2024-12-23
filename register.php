@@ -31,9 +31,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if ($isValid) {
-        require_once './helper/database/UserController.php';
+        require_once 'helper/database/UserController.php';
 
-        $userController = new UserController();
+        $userController = new UserController();     
         $user = $userController->create($nama, $email, $password);
 
         if ($user) {
@@ -74,28 +74,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <form id="registrationForm" action="#" method="post" class="space-y-6">
                 <div>
                     <label for="nama" class="block text-sm font-medium text-gray-700">Nama Lengkap</label>
-                    <input type="text" id="nama" name="nama" required
+                    <input type="text" id="nama" name="nama" require_onced
                         class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-600 focus:border-blue-600">
                     <p id="namaError" class="mt-1 text-sm text-red-600 hidden"></p>
                 </div>
 
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" id="email" name="email" required
+                    <input type="email" id="email" name="email" require_onced
                         class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-600 focus:border-blue-600">
                     <p id="emailError" class="mt-1 text-sm text-red-600 hidden"></p>
                 </div>
 
                 <div>
                     <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                    <input type="password" id="password" name="password" required
+                    <input type="password" id="password" name="password" require_onced
                         class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-600 focus:border-blue-600">
                     <p id="passwordError" class="mt-1 text-sm text-red-600 hidden"></p>
                 </div>
 
                 <div>
                     <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Konfirmasi Password</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" required
+                    <input type="password" id="confirmPassword" name="confirmPassword" require_onced
                         class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-600 focus:border-blue-600">
                     <p id="confirmPasswordError" class="mt-1 text-sm text-red-600 hidden"></p>
                 </div>

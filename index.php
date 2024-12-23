@@ -22,8 +22,8 @@
                         <a href="#" class="text-gray-700 hover:text-blue-600">Jelajahi</a>
                         <a href="#" class="text-gray-700 hover:text-blue-600">Tentang</a>
                         <a href="#" class="text-gray-700 hover:text-blue-600">Kontak</a>
-                        <a href="/login" class="text-blue-600 hover:text-blue-700 font-medium">Masuk</a>
-                        <a href="/register" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Daftar</a>
+                        <a href="./login.php" class="text-blue-600 hover:text-blue-700 font-medium">Masuk</a>
+                        <a href="./register.php" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Daftar</a>
                     </div>
                     <div class="sm:hidden flex items-center">
                         <button class="text-gray-700 hover:text-blue-600">
@@ -41,11 +41,11 @@
                     <h1 class="text-4xl font-bold mb-4">Temukan Acara Menarik di Sekitarmu</h1>
                     <p class="text-xl mb-8">Jelajahi berbagai acara seru dan dapatkan pengalaman tak terlupakan</p>
                     <div class="flex justify-center space-x-4">
-                        <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100">
-                            Mulai Jelajahi
+                        <a href="./register.php" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100">
+                            Daftar
                         </a>
-                        <a href="#" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700">
-                            Buat Acara
+                        <a href="./login.php" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700">
+                            Masuk
                         </a>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
         <!-- First Row -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition">
-                <img src="https://source.unsplash.com/800x600/?concert" alt="Event" class="w-full h-48 object-cover">
+                <img src="https://picsum.photos/400/300" alt="Event" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <div class="text-blue-600 text-sm font-medium mb-1">MUSIK</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Festival Musik Jakarta</h3>
@@ -76,7 +76,7 @@
             </div>
 
             <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition">
-                <img src="https://source.unsplash.com/800x600/?workshop" alt="Event" class="w-full h-48 object-cover">
+                <img src="https://picsum.photos/400/300" alt="Event" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <div class="text-blue-600 text-sm font-medium mb-1">WORKSHOP</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Workshop Digital Marketing</h3>
@@ -89,7 +89,7 @@
             </div>
 
             <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition">
-                <img src="https://source.unsplash.com/800x600/?food-festival" alt="Event" class="w-full h-48 object-cover">
+                <img src="https://picsum.photos/400/300-festival" alt="Event" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <div class="text-blue-600 text-sm font-medium mb-1">KULINER</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Festival Kuliner Nusantara</h3>
@@ -105,7 +105,7 @@
         <!-- Second Row -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition">
-                <img src="https://source.unsplash.com/800x600/?art-exhibition" alt="Event" class="w-full h-48 object-cover">
+                <img src="https://picsum.photos/400/300-exhibition" alt="Event" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <div class="text-blue-600 text-sm font-medium mb-1">SENI</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Pameran Seni Rupa</h3>
@@ -118,7 +118,7 @@
             </div>
 
             <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition">
-                <img src="https://source.unsplash.com/800x600/?technology" alt="Event" class="w-full h-48 object-cover">
+                <img src="https://picsum.photos/400/300" alt="Event" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <div class="text-blue-600 text-sm font-medium mb-1">TEKNOLOGI</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Tech Conference 2024</h3>
@@ -131,7 +131,7 @@
             </div>
 
             <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition">
-                <img src="https://source.unsplash.com/800x600/?sports" alt="Event" class="w-full h-48 object-cover">
+                <img src="https://picsum.photos/400/300" alt="Event" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <div class="text-blue-600 text-sm font-medium mb-1">OLAHRAGA</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Jakarta Marathon</h3>

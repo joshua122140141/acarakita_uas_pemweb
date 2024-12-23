@@ -50,6 +50,8 @@ logout.php
 README.md
 register.php
 tailwind.config.ts
+create_tables.sql
+acarakita.sql
 ```
 
 ## 3. Database
@@ -201,8 +203,9 @@ CREATE TABLE registrations (
         ```php
         $host = 'localhost';
         $db = 'acarakita';
-        $user = 'acarakita123';
-        $pass = 'acarakita123';
+        $user = 'root';
+        $pass = '';
+        (database berbeda saat hosting)
         ```
 
 ### **3.3 Manipulasi Data pada Database (10%)**
@@ -228,6 +231,7 @@ CREATE TABLE registrations (
 -   **a)** Buat fungsi untuk menetapkan, mendapatkan, dan menghapus cookie.  
     Cookie digunakan untuk menyimpan halaman terakhir yang dikunjungi pengguna (terlihat di semua halaman).
     Di file _/assets/js/cookie.js_ terdapat fungsi:
+
     -   Menetapkan cookie menggunakan `setCookie`.
     -   Mendapatkan cookie menggunakan `getCookie`.
     -   Menghapus cookie menggunakan `deleteCookie`.
@@ -242,35 +246,38 @@ CREATE TABLE registrations (
 
 #### **5%** Apa langkah-langkah yang Anda lakukan untuk meng-host aplikasi web Anda?
 
--   Pilih penyedia hosting (AWS, DigitalOcean, Heroku).
--   Siapkan server sesuai kebutuhan (CPU, RAM, OS).
--   Deploy aplikasi via FTP atau CI/CD.
--   Daftarkan dan arahkan domain ke server.
--   Uji aplikasi dan gunakan tools untuk monitoring.
--   Terapkan caching dan backup rutin.
+-   Memilih penyedia hosting web yang sesuai dan gratis, yaitu **Aeonfree.com**.
+-   Membuat akun dan proyek baru (domain gratis tersedia).
+-   Membuka Panel Admin > Database untuk membuat user dan database baru berdasarkan kredensial yang ada.
+-   Mengunggah file aplikasi web ke server menggunakan FTP.
+-   Uji aplikasi
 
 #### **5%** Pilih penyedia hosting web yang menurut Anda paling cocok untuk aplikasi web Anda.
 
--   **AWS**: Fleksibel dan skalabel.
--   **Heroku**: Mudah digunakan untuk aplikasi kecil.
--   **DigitalOcean**: Terjangkau dan dapat disesuaikan.
--   **Netlify**: Cocok untuk aplikasi statis dengan CI/CD.
+Karena ini merupakan web yang berbasis PHP dan MySQL, saya memilih penyedia hosting web dengan fitur panel seperti CPanel atau yang lainnya. IDCloudHost, Hostinger, rumahweb dengan paket shared hostingnya adalah pilihan yang cocok untuk berbayar dan InfinityFree atau Aeonfree.com merupakan pilihan untuk hosting gratis.
+
+Hosting menggunakan VPS atau cloud seperti AWS, Google Cloud, atau Azure kurang cocok karena aplikasi ini tidak memerlukan sumber daya yang besar ataupun konfigurasi server yang kompleks.
 
 #### **5%** Bagaimana Anda memastikan keamanan aplikasi web yang Anda host?
 
--   Gunakan HTTPS untuk enkripsi data.
--   Terapkan firewall dan VPN untuk akses aman.
--   Pastikan update keamanan sistem secara rutin.
--   Lakukan backup dan siapkan redundansi.
--   Gunakan pemantauan keamanan dan autentikasi API.
+Sisi kode:
+
+-   Menggunakan hashing untuk password.
+-   Menggunakan session untuk mengelola state.
+-   Melakukan input sanitazion untuk mencegah SQL Injection.
+-   Melakukan validasi input untuk mencegah Cross-site Scripting.
+-   Menggunakan prepared statement untuk query database.
+
+Sisi server:
+
+-   Menggunakan HTTPS untuk enkripsi data.
+-   Memastikan kredensial bagian server kuat, tidak seperti Admin#1234
+-   Memperbarui sistem operasi dan software secara berkala.
 
 #### **5%** Jelaskan konfigurasi server yang Anda terapkan untuk mendukung aplikasi web Anda.
 
--   Gunakan web server (Apache/Nginx) untuk menangani trafik.
--   Sesuaikan konfigurasi database (MySQL/PostgreSQL).
--   Terapkan load balancing untuk trafik tinggi.
--   Gunakan caching (Redis/Memcached).
--   Manfaatkan environment variables untuk data sensitif.
--   Terapkan sistem logging untuk monitoring.
+-   Menggunakan PHP 8.1 atau yang lebih baru.
+-   Menggunakan mySQL sebagai database.
+-   Menggunakan CPanel atau panel admin lainnya untuk mengelola database dan file.
 
 ---

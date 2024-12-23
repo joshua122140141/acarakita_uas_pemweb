@@ -1,6 +1,6 @@
 <?php
-require_once './helper/model/Registration.php';
-require_once './helper/database/koneksi.php';
+require_once __DIR__ . '/../model/Registration.php';
+require_once __DIR__ . '/Koneksi.php';
 
 class RegistrationController extends Koneksi {
     public function create($user_id, $event_id, $name, $payment_method, $quantity, $total_price, $chair_number, $ip_address, $browser) {
